@@ -1,9 +1,16 @@
-<div id="ml_test" style="text-align: center;">
-<div class="upload-btn-wrapper">
-<button class="btn">Upload an image</button>
-<input id="uploadImage" type="file" name="myPhoto" onchange="PreviewImage();"/>
-</div>
-<img id="uploadPreview"/>
-<img src="https://github.com/howwegettonext/ml_introduction/raw/master/loader.gif" id="loading-gif"/>
-<p>The network classified this as <span id="result">...</span>. Its confidence is <span id="probability">...</span>%.</p>
-</div>
+<head>
+  <script src="https://unpkg.com/ml5"></script>
+<script src="https://raw.githubusercontent.com/howwegettonext/ml_introduction/master/ml_example.js"></script>
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/howwegettonext/ml_introduction/master/ml_style.css">
+</head>
+<body>
+  <div id="ml_test" style="text-align: center;">
+  <div class="upload-btn-wrapper">
+  <button class="btn">Upload an image</button>
+  <input id="uploadImage" type="file" name="myPhoto" onchange="PreviewImage();"/>
+  </div>
+  <img id="uploadPreview"/>
+  <img src="https://github.com/howwegettonext/ml_introduction/raw/master/loader.gif" id="loading-gif"/>
+  <p>The network classified this as <span id="result">...</span>. Its confidence is <span id="probability">...</span>%.</p>
+  </div>
+</body>
